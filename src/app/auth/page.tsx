@@ -1,11 +1,12 @@
 import React from 'react'
+import { Button } from '@/components/ui/button'
 
 type Props = {}
 
 const LoginPage = (props: Props) => {
   return (
    <main>
-        my name is rex
+        <Button>REx Randy</Button>
    </main>
   )
 }
