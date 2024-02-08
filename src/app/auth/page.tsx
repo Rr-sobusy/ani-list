@@ -32,7 +32,7 @@ const LoginPage = (props: Props) => {
           <label className='text-slate-700 text-lg font-semibold tracking-tight scroll-m-20'>Password</label>
           <Input name='password' className='py-6 text-sm text-slate-700' placeholder='Enter your password' />
         </div>
-        <Button type='submit' className=''>Login</Button>
+        <Button type='submit' className='py-6'>Login</Button>
       </Card>
     </form>
   )
