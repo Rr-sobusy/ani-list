@@ -19,18 +19,24 @@ const LoginPage = (props: Props) => {
   }
   return (
     <form onSubmit={submitHandler} className='flex items-center justify-center h-screen bg-[#F3F4F6]'>
-      <Card className='lg:w-1/3 md:w-3/4 flex flex-col gap-5 w-full h-full md:h-[550px] px-6 py-14 md:py-8 rounded-xl'>
+      <Card className='lg:w-1/3 md:w-3/4 flex flex-col gap-5 w-full h-full md:h-[550px] px-6 py-8 md:py-8 rounded-xl'>
         <div className='flex flex-col items-center'>
           <h2 className='scroll-m-20 text-4xl text-[#E11D48] font-extrabold tracking-tight lg:text-3xl'>Anime<span className='text-primary tracking-wide'>List</span></h2>
-          <h6 className='font-sans text-gray-600 font-semibold tracking-wider'>Enter your username and password to login</h6>
+          <h6 className='font-sans text-gray-600 font-semibold tracking-wider text-[.8rem]'>Catch up with your favorite anime and manga series!</h6>
         </div>
 
         {/* Input fields */}
-        <div className='flex flex-col md:gap-2 gap-4'>
-          <label className='text-slate-700 md:text-lg text-xl font-semibold tracking-tight scroll-m-20'>Username</label>
-          <Input name='username' className='py-6 text-sm text-slate-700' placeholder='Enter your username' />
-          <label className='text-slate-700 md:text-lg text-xl font-semibold tracking-tight scroll-m-20'>Password</label>
-          <Input name='password' className='py-6 text-sm text-slate-700' placeholder='Enter your password' />
+        <div className='flex flex-col md:gap-3 gap-4 mt-9 md:mt-0'>
+          <div className='flex flex-col gap-1'>
+            <label className='text-slate-700 md:text-base text-xl font-semibold tracking-tight scroll-m-20'>Username</label>
+            <Input name='username' className='py-6 md:py-6 text-sm text-slate-700' placeholder='Enter your username' />
+          </div>
+
+          <div className='flex flex-col gap-1'>
+            <label className='text-slate-700 md:text-base text-xl font-semibold tracking-tight scroll-m-20'>Password</label>
+            <Input name='password' className='py-6 md:py-6 text-sm text-slate-700' placeholder='Enter your password' />
+          </div>
+
         </div>
         <div className='flex items-center flex-col gap-3'>
           <Button type='submit' className='py-6 w-full'>Login</Button>
