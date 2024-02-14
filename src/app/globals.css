@@ -1,6 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* fonts */
+@font-face {
+  font-family: 'Barriecito';
+  src: url('/fonts/Barriecito.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Cardo';
+  src: url('/fonts/Cardo.ttf') format('truetype');
+}
  
 @layer base {
   :root {

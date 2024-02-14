@@ -19,14 +19,14 @@ const LoginPage = (props: Props) => {
   }
   return (
     <form onSubmit={submitHandler} className='flex items-center justify-center h-screen bg-[#F3F4F6]'>
-      <Card className='lg:w-1/3 md:w-3/4 flex flex-col gap-5 w-full h-full md:h-[550px] px-6 py-20 md:py-8 rounded-xl'>
+      <Card className='lg:w-1/3 md:w-3/4 flex flex-col gap-5 w-full h-full md:h-[550px] px-6 py-10 md:py-8 rounded-xl'>
         <div className='flex flex-col items-center'>
-          <h2 className='scroll-m-20 text-2xl text-primary font-extrabold tracking-tight lg:text-3xl'><span className='text-[#E11D48] mr-1'>Ani</span>list</h2>
+          <h2 className='scroll-m-20 text-4xl text-[#E11D48] font-extrabold tracking-tight lg:text-3xl'>Ani<span className='text-primary font-cardo tracking-wide'>List</span></h2>
           <h6 className='font-sans text-gray-600 font-semibold tracking-wider'>Enter your username and password to login</h6>
         </div>
 
         {/* Input fields */}
-        <div className='flex mt-3 flex-col gap-2'>
+        <div className='flex md:mt-3 mt-8 flex-col gap-2'>
           <label className='text-slate-700 text-lg font-semibold tracking-tight scroll-m-20'>Username</label>
           <Input name='username' className='py-6 text-sm text-slate-700' placeholder='Enter your username' />
           <label className='text-slate-700 text-lg font-semibold tracking-tight scroll-m-20'>Password</label>
