@@ -67,3 +67,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+.__dashed-text::before, .__dashed-text::after {
+  @apply content-[''] h-[.5px] bg-slate-500 block 
+}
